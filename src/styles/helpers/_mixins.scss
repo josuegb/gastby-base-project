@@ -1,0 +1,46 @@
+@mixin breakpoint($points) {
+  @each $point in $points {
+    @if $point == large {
+      @media screen and (min-width: $screen-lg-min) { @content; }
+    } @else if $point == desktop {
+      @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) { @content; }
+    } @else if $point == desktop-down {
+      @media screen and (max-width: $screen-md-max) { @content; }
+    } @else if $point == tablet-up {
+      @media screen and (min-width: $screen-md-min) { @content; }
+    } @else if $point == tablet {
+      @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content; }
+    } @else if $point == tablet-down {
+      @media screen and (max-width: $screen-sm-max) { @content; }
+    } @else if $point == tablet-portrait-down {
+      @media screen and (max-width: $screen-xs-max)  { @content; }
+      @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: portrait) { @content; }
+    } @else if $point == tablet-landscape-up {
+      @media screen and (min-width: $screen-md-min) { @content; }
+      @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: landscape) { @content; }
+    } @else if $point == tablet-portrait {
+      @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: portrait) { @content; }
+    } @else if $point == tablet-landscape {
+      @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: landscape) { @content; }
+    } @else if $point == phone-up {
+      @media screen and (min-width: $screen-sm-min) { @content; }
+    } @else if $point == phone {
+      @media screen and (max-width: $screen-xs-max)  { @content; }
+    } @else if $point == phone-portrait {
+      @media screen and (max-width: $screen-xs-max) and (orientation: portrait)  { @content; }
+    } @else if $point == phone-landscape {
+      @media screen and (max-width: $screen-xs-max) and (orientation: landscape)  { @content; }
+    }
+  }
+}
+
+@mixin hover {
+  &:active,
+  &:focus,
+  &:focus:active,
+  &:hover,
+  &:hover:active {
+    @content;
+  }
+}
+

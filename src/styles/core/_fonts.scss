@@ -1,0 +1,34 @@
+// sass-lint:disable no-duplicate-properties
+//
+// Typography
+// --------------------------------------------------
+$font-url: './assets/fonts';
+
+@mixin font-face($family, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    src: url('#{$font-url}/#{$family}.eot');
+    src: url('#{$font-url}/#{$family}.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-url}/#{$family}.woff2') format('woff2'),
+    url('#{$font-url}/#{$family}.woff') format('woff'),
+    url('#{$font-url}/#{$family}.ttf') format('truetype'),
+    url('#{$font-url}/#{$family}.svg##{$family}') format('svg');
+  }
+}
+// sass-lint:enable no-duplicate-properties
+
+$fonts: (
+  'Name font 1',
+  'Name font 2',
+  'Name font 3',
+  'Name font 4',
+  'Name font 5',
+  'Name font 6',
+  'Name font 7'
+);
+
+@each $family in $fonts {
+  @include font-face($family);
+}

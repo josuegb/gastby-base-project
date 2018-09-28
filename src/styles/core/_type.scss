@@ -1,0 +1,66 @@
+// Type
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    // styles
+}
+
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  text-transform: uppercase;
+}
+
+h2,
+.h2,
+h4,
+.h4 {
+  // styles
+}
+
+h2,
+.h2 {
+  // styles
+  @include breakpoint('phone-up') {
+  // styles
+  }
+}
+
+h3,
+.h3 {
+  // styles
+  @include breakpoint('phone-up') {
+  // styles
+  }
+}
+
+h4,
+.h4 {
+    // styles
+
+  @include breakpoint('phone-up') {
+    // styles
+  }
+}
+
+p,
+li {
+    // styles
+
+  @include breakpoint('phone-up') {
+      // styles
+  }
+}
+
+a {
+  cursor: pointer;
+}
