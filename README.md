@@ -13,7 +13,17 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 🚀 Quick start
 
-1.  **Install the Gatsby CLI.**
+1.  **Requirements**
+
+    To start the development build locally run:
+
+    ```sh
+    # install the Gatsby CLI globally
+    npm install
+    gatsby develop
+    ```
+
+2.  **Install the Gatsby CLI.**
 
     The Gatsby CLI helps you create new sites using Gatsby starters (like this one!)
 
@@ -22,7 +32,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     npm install -g gatsby-cli
     ```
 
-2.  **Create a Gatsby site.**
+3.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
@@ -31,7 +41,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby new my-default-starter
     ```
 
-3.  **Start developing.**
+4.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -40,7 +50,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby develop
     ```
 
-4.  **Open the source code and start editing!**
+5.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
     
