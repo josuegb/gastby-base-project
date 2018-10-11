@@ -4,13 +4,11 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby Wordpress - Base Project
 </h1>
 
-Kick off your project with this default boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. 
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://next.gatsbyjs.org/docs/gatsby-starters/)._
-
+This is a base project with Gatsby and the wordpress plugin integration, ready to change the Wordpress URL and authentication and start querying the Wordpress Rest API, using Wordpress as a Headless CMS.
+  
 ## 🚀 Quick start
 
 1.  **Requirements**
@@ -18,90 +16,46 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     To start the development build locally run:
 
     ```sh
-    # install the Gatsby CLI globally
     npm install
     gatsby develop
     ```
 
-2.  **Install the Gatsby CLI.**
-
-    The Gatsby CLI helps you create new sites using Gatsby starters (like this one!)
-
-    ```sh
-    # install the Gatsby CLI globally
-    npm install -g gatsby-cli
-    ```
-
-3.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the default starter.
-
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter
-    ```
-
-4.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
-
-5.  **Open the source code and start editing!**
+2.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
     
     *Note: You'll also see a second link: `http://localhost:8000___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://next.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).*
     
-    Open the the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the the directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
     
-## 🧐 What's inside?
+    ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
     .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
     ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    ├── README.md
-    └── yarn.lock
+    ├── Utils
+    ├── Styles
+    ├── Shared
+    ├── Layouts
+    ├── Components
+    ├── Assets
 
-  1.  **`/node_modules`**: The directory where all of the modules of code that your project depends on (npm packages) are automatically installed.  
+
+  1.  **`/gatsby-config.js`**: The wordpress configuration goes here. Please check the comments.
   
-  2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser), like your site header, or a page template. “Src” is a convention for “source code”.
+  2.  **`/Utils`**: This is where you are going to manage the data to normalize it and return it how you need it.
   
-  3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-  
-  4.  **`.prettierrc`**: This is a configuration file for a tool called [Prettier](https://prettier.io/), which is a tool to help keep the formatting of your code consistent.
-  
-  5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://next.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-  
-  6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://next.gatsbyjs.org/docs/gatsby-config/) for more detail).
-  
-  7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://next.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-  
-  8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://next.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-  
-  9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-  
-  10.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. (You won’t change this file directly).
-  
-  11.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-  
-  12.  **`README.md`**: A text file containing useful reference information about your project.
-  
-  13.  **`yarn.lock`**: [Yarn](https://yarnpkg.com/) is a package manager alternative to npm. You can use either yarn or npm, though all of the Gatsby docs reference npm.  This file serves essentially the same purpose as `package-lock.json`, just for a different package management system.
+  3.  **`/Styles`**: Where you are going to manage all the styles.
+
+  4.  **`/Shared`**: All shared components, that are going to be used in the entire project. (Buttons, labels)
+
+  5.  **`/Layouts`**: Layouts components, where you have menus, footers that are going to be here. Layouts to use on pages.
+
+  6.  **`/Components`**: All the components that the site are going to use.
+
+  7.  **`/Assets`**: Where all the assests goes.
+
 
 ## 🎓 Learning Gatsby
 
